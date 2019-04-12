@@ -6,7 +6,7 @@ const Comment = props => {
     return (
         <div className={styles.commentArea}>
             {props.textState === "default" && 
-                <form className={ props.comment.length > 0 ? styles.active : null}>
+                <div className={ props.comment.length > 0 ? styles.active : null}>
                     <div className={styles.textAreaForm}>
                         <textarea
                             className={styles.textArea}
@@ -18,10 +18,10 @@ const Comment = props => {
                         <div className={styles.total}>{props.total - props.comment.length}</div>
                     </div>
                     <button className={styles.btnSave}>Save</button>
-                </form>        
+                </div>        
             }
             {props.textState === "disabled" && 
-                <form>
+                <div>
                     <div className={styles.textAreaForm}>
                         <textarea
                             className={styles.textArea}
@@ -34,10 +34,10 @@ const Comment = props => {
                         <div className={styles.total}>{props.total}</div>
                     </div>
                     <button className={styles.btnSave}>Save</button>
-                </form>        
+                </div>        
             }
             {props.textState === "readOnly" && 
-                <form>
+                <div>
                     <div className={styles.textAreaForm}>
                         <textarea
                             className={styles.textArea}
@@ -50,7 +50,7 @@ const Comment = props => {
                         <div className={styles.total}>{props.total}</div>
                     </div>
                     <button className={styles.btnSave}>Save</button>
-                </form>        
+                </div>        
             }
         </div>
     );
