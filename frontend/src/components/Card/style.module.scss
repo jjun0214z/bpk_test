@@ -1,0 +1,115 @@
+.cardWrap {
+    font-size: 0;
+    display: flex;
+    align-items: flex-start;
+    
+    .card {
+        width: 100%;
+        max-width: 190px;
+        margin-left: 10px;
+        overflow: hidden;
+        background-color: #f8f9fb;
+        @include borderRadius(#d9d8d8, 3px);
+
+        &:first-child {margin-left: 0;}
+        &.horizontal {
+            max-width: none;
+            display: flex;
+            .photo {
+                img {width: 150px;}
+            }
+            .cont {
+                width: 100%;
+                display: flex;
+                flex-flow: wrap;
+                .column {
+                    width: 100%;
+                    .text {
+                        margin-top: 10px;
+                        @include ellipse(true);
+                    }
+                    &.bottom {
+                        padding-top: 0;
+                        border-top: 0;
+                        display: flex;
+                        align-items: flex-end;
+                    }
+                }
+            }
+        }
+        .photo {
+            img {width: 100%;}
+        }
+        .cont {
+            .column {
+                padding: 10px;
+                border-top: 1px solid #e6e6e6;
+                box-sizing: border-box;
+
+                &:first-child {
+                    border-top: 0;
+                }
+                .label + .title {margin-top: 5px;}
+                .title + .hilight {margin-top: 20px;}
+                .label {
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #a6a6a6;
+                    display: block;
+                    @include ellipse();
+                }
+                .title {
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #333;
+                    display: block;
+                    @include ellipse();
+                }
+                .hilight {
+                    display: flex;
+                    strong {
+                        margin-right: 5px;
+                        font-size: 13px;
+                        line-height: 18px;
+                        color: #db5a54;
+                        display: block;
+                    }
+                    .options {
+                        @include clear();
+                        span {
+                            font-size: 10px;
+                            line-height: 18px;
+                            text-decoration: line-through;
+                            color: #a2a2a2;
+                            display: block;
+                            float: left;
+                        }
+                    }
+                }
+                .grade {
+                    display: flex;
+                    span {
+                        width: 10px;
+                        height: 10px;
+                        margin-left: 2px;
+                        font-size: 0;
+                        display: block;
+                        border-radius: 50%;
+                        background-color: #d9d8d8;
+
+                        &:first-child {margin-left: 0;}
+                        &.active {background-color: #fdc62f;}
+                    }
+                }
+
+                .text {
+                    margin-top: 5px;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #6c6c6c;
+                    @include ellipse();
+                }
+            }
+        }
+    }
+}
