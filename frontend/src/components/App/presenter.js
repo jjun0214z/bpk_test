@@ -12,7 +12,9 @@ const App = props => (
             <Link to="/card">카드 UI</Link>
             <Link to="/comment">입력 폼 UI</Link>
         </div>
-        <PublicRoutes />
+        <Card />
+        <Comment />
+        {/* <PublicRoutes /> */}
     </div>
 );
 
