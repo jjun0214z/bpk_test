@@ -6,7 +6,11 @@ class Container extends Component {
         data: []
     }
     componentDidMount() {
-        fetch('./json/data.json')
+        fetch('./json/data.json', {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
         .then(response => response.json())
         .then(json => {
             this.setState({
