@@ -1,47 +1,47 @@
 [
-    {
-        "id": 1,
-        "type": "vertical",
-        "image": {
-            "file": "images/img_card.png",
-            "caption": "dummy"
-        },
-        "label": "Card Label",
-        "title": "Card Title",
-        "grade": [true, true, true, true, true],
-        "content": "컨텐츠 내용입니다."
+  {
+    "id": 1,
+    "type": "vertical",
+    "image": {
+      "file": "images/img_card.png",
+      "caption": "dummy"
     },
-    {
-        "id": 2,
-        "type": "vertical",
-        "image": {
-            "file": "images/img_card.png",
-            "caption": "dummy"
-        },
-        "label": "Card Label",
-        "title": "Card Title",
-        "grade": [true, true, true, true, false]
+    "label": "Card Label",
+    "title": "Card Title",
+    "grade": [true, true, true, true, true],
+    "content": "컨텐츠 내용입니다."
+  },
+  {
+    "id": 2,
+    "type": "vertical",
+    "image": {
+      "file": "images/img_card.png",
+      "caption": "dummy"
     },
-    {
-        "id": 3,
-        "type": "vertical",
-        "image": {
-            "file": "images/img_card.png",
-            "caption": "dummy"
-        },
-        "label": "Card Label",
-        "title": "Card Title"
+    "label": "Card Label",
+    "title": "Card Title",
+    "grade": [true, true, true, true, false]
+  },
+  {
+    "id": 3,
+    "type": "vertical",
+    "image": {
+      "file": "images/img_card.png",
+      "caption": "dummy"
     },
-    {
-        "id": 4,
-        "type": "horizontal",
-        "image": {
-            "file": "images/img_card.png",
-            "caption": "dummy"
-        },
-        "title": "Card Title",
-        "grade": [true, true, true, false, false],
-        "content": "컨텐츠 내용입니다.",
-        "user": "Jone Doe"
-    }
+    "label": "Card Label",
+    "title": "Card Title"
+  },
+  {
+    "id": 4,
+    "type": "horizontal",
+    "image": {
+      "file": "images/img_card.png",
+      "caption": "dummy"
+    },
+    "title": "Card Title",
+    "grade": [true, true, true, false, false],
+    "content": "컨텐츠 내용입니다.",
+    "user": "Jone Doe"
+  }
 ]

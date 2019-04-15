@@ -1,56 +1,58 @@
 .commentArea {
-    margin-top: 10px;
-    &:first-child {
-        margin-top: 0;
-    }
-    > div {
-        position: relative;
-        &.active {
-            .textAreaForm {
-                padding-right: 100px;
-                .total {
-                    right: 115px;
-                }
-            }
-            .btnSave {
-                width: 100px;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                right: 0;
-                display: block;
-                background: none;
-                color: #8ccfd2;
-                box-sizing: border-box;
-                @include borderRadius(#ccc, 2px);
-            }
-        } 
-
-        .textAreaForm {
-            position: relative;
-            font-size: 0;
-            .textArea {
-                width: 100%;
-                height: 100px;
-                padding: 10px;
-                box-sizing: border-box;
-                font-size: 11px;
-                outline: none;
-                @include borderRadius(#d9d8d8, 3px);
-                &:focus {
-                    @include borderRadius(#8ccfd2, 3px);
-                }
-            }
-            .total {
-                padding: 5px;
-                font-size: 11px;
-                line-height: 16px;
-                color: #777;
-                position: absolute;
-                bottom: 0;
-                right: 15px;
-            }
+  margin-top: 10px;
+  &:first-child {
+    margin-top: 0;
+  }
+  > div {
+    position: relative;
+    &.active {
+      .textAreaForm {
+        padding-right: 100px;
+        .total {
+          right: 115px;
         }
-        .btnSave {display: none;}
+      }
+      .btnSave {
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        background: none;
+        color: #8ccfd2;
+        box-sizing: border-box;
+        @include borderRadius(#ccc, 2px);
+      }
     }
+
+    .textAreaForm {
+      position: relative;
+      font-size: 0;
+      .textArea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 11px;
+        outline: none;
+        @include borderRadius(#d9d8d8, 3px);
+        &:focus {
+          @include borderRadius(#8ccfd2, 3px);
+        }
+      }
+      .total {
+        padding: 5px;
+        font-size: 11px;
+        line-height: 16px;
+        color: #777;
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+      }
+    }
+    .btnSave {
+      display: none;
+    }
+  }
 }

@@ -1,27 +1,27 @@
 // 말줄임
-@mixin ellipse($multi: false){
-	width:100%; 
-    overflow:hidden; 
-    text-overflow:ellipsis;
-    
-    @if $multi == false {
-        white-space:nowrap;
-    } @else {
-        white-space: normal;
-        line-height: 1.2; 
-        height: 6em;
-    }
+@mixin ellipse($multi: false) {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @if $multi == false {
+    white-space: nowrap;
+  } @else {
+    white-space: normal;
+    line-height: 1.2;
+    height: 6em;
+  }
 }
 
 @mixin borderRadius($color, $radius) {
-    border: 1px solid $color;
-    border-radius: $radius;
+  border: 1px solid $color;
+  border-radius: $radius;
 }
 
 @mixin clear() {
-    &:after {
-        content: "";
-        display: block;
-        clear: both;
-    }
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }

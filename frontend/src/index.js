@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from 'components/App';
-import 'polyfills';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "components/App";
+import "polyfills";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));

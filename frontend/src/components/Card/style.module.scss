@@ -1,122 +1,135 @@
 .cardWrap {
-    margin-bottom: 100px;
-    font-size: 0;
-    
-    @include clear();
-    .card {
-        width: 100%;
-        float: left;
-        max-width: 190px;
-        margin-left: 10px;
-        overflow: hidden;
-        background-color: #f8f9fb;
-        @include borderRadius(#d9d8d8, 3px);
+  margin-bottom: 100px;
+  font-size: 0;
 
-        &:first-child {margin-left: 0;}
-        &.horizontal {
-            height: 150px;
-            max-width: 200px;
-            position: relative;
-            padding-left: 150px;
-            .photo {
-                width: 150px;
-                position: absolute;
-                top: 0;
-                left: 0;
-                font-size: 0;
-            }
-            .cont {
-                width: 100%;
-                .column {
-                    width: 100%;
-                    height: 130px;
-                    .text {
-                        margin-top: 10px;
-                        @include ellipse(true);
-                    }
-                    &.bottom {
-                        height: auto;
-                        padding-top: 0;
-                        border-top: 0;
-                    }
-                }
-            }
-        }
-        .photo {
-            img {width: 100%;height: 100%;}
-        }
-        .cont {
-            .column {
-                padding: 10px;
-                border-top: 1px solid #e6e6e6;
-                box-sizing: border-box;
+  @include clear();
+  .card {
+    width: 100%;
+    float: left;
+    max-width: 190px;
+    margin-left: 10px;
+    overflow: hidden;
+    background-color: #f8f9fb;
+    @include borderRadius(#d9d8d8, 3px);
 
-                &:first-child {
-                    border-top: 0;
-                }
-                .label + .title {margin-top: 5px;}
-                .title + .hilight {margin-top: 20px;}
-                .label {
-                    font-size: 12px;
-                    line-height: 16px;
-                    color: #a6a6a6;
-                    display: block;
-                    @include ellipse();
-                }
-                .title {
-                    font-size: 14px;
-                    line-height: 18px;
-                    color: #333;
-                    display: block;
-                    @include ellipse();
-                }
-                .hilight {
-                    @include clear();
-                    strong {
-                        margin-right: 5px;
-                        font-size: 13px;
-                        line-height: 18px;
-                        color: #db5a54;
-                        display: block;
-                        float: left;
-                    }
-                    .options {
-                        float: left;
-                        span {
-                            font-size: 10px;
-                            line-height: 18px;
-                            text-decoration: line-through;
-                            color: #a2a2a2;
-                            display: block;
-                            float: left;
-                        }
-                    }
-                }
-                .grade {
-                    @include clear();
-                    span {
-                        float: left;
-                        width: 10px;
-                        height: 10px;
-                        margin-left: 2px;
-                        font-size: 0;
-                        display: block;
-                        border-radius: 50%;
-                        background-color: #d9d8d8;
-
-                        &:first-child {margin-left: 0;}
-                        &.active {background-color: #fdc62f;}
-                    }
-                }
-
-                .text {
-                    margin-top: 5px;
-                    font-size: 12px;
-                    line-height: 18px;
-                    color: #6c6c6c;
-                    @include ellipse();
-                }
-            }
-        }
+    &:first-child {
+      margin-left: 0;
     }
+    &.horizontal {
+      height: 150px;
+      max-width: 200px;
+      position: relative;
+      padding-left: 150px;
+      .photo {
+        width: 150px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0;
+      }
+      .cont {
+        width: 100%;
+        .column {
+          width: 100%;
+          height: 130px;
+          .text {
+            margin-top: 10px;
+            @include ellipse(true);
+          }
+          &.bottom {
+            height: auto;
+            padding-top: 0;
+            border-top: 0;
+          }
+        }
+      }
+    }
+    .photo {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .cont {
+      .column {
+        padding: 10px;
+        border-top: 1px solid #e6e6e6;
+        box-sizing: border-box;
+
+        &:first-child {
+          border-top: 0;
+        }
+        .label + .title {
+          margin-top: 5px;
+        }
+        .title + .hilight {
+          margin-top: 20px;
+        }
+        .label {
+          font-size: 12px;
+          line-height: 16px;
+          color: #a6a6a6;
+          display: block;
+          @include ellipse();
+        }
+        .title {
+          font-size: 14px;
+          line-height: 18px;
+          color: #333;
+          display: block;
+          @include ellipse();
+        }
+        .hilight {
+          @include clear();
+          strong {
+            margin-right: 5px;
+            font-size: 13px;
+            line-height: 18px;
+            color: #db5a54;
+            display: block;
+            float: left;
+          }
+          .options {
+            float: left;
+            span {
+              font-size: 10px;
+              line-height: 18px;
+              text-decoration: line-through;
+              color: #a2a2a2;
+              display: block;
+              float: left;
+            }
+          }
+        }
+        .grade {
+          @include clear();
+          span {
+            float: left;
+            width: 10px;
+            height: 10px;
+            margin-left: 2px;
+            font-size: 0;
+            display: block;
+            border-radius: 50%;
+            background-color: #d9d8d8;
+
+            &:first-child {
+              margin-left: 0;
+            }
+            &.active {
+              background-color: #fdc62f;
+            }
+          }
+        }
+
+        .text {
+          margin-top: 5px;
+          font-size: 12px;
+          line-height: 18px;
+          color: #6c6c6c;
+          @include ellipse();
+        }
+      }
+    }
+  }
 }
