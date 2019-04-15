@@ -8,9 +8,6 @@
         &.active {
             .textAreaForm {
                 padding-right: 100px;
-                .textArea {
-                    @include borderRadius(#8ccfd2, 3px);
-                }
                 .total {
                     right: 115px;
                 }
@@ -40,6 +37,9 @@
                 font-size: 11px;
                 outline: none;
                 @include borderRadius(#d9d8d8, 3px);
+                &:focus {
+                    @include borderRadius(#8ccfd2, 3px);
+                }
             }
             .total {
                 padding: 5px;
