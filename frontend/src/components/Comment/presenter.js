@@ -13,7 +13,7 @@ const Comment = props => {
                             placeholder="입력하세요"
                             value={props.comment}
                             onChange={props.handleInputChanage}
-                            maxLength={props.total}
+                            onKeyUp={props.handleMaxlength}
                         ></textarea>
                         <div className={styles.total}>{props.total - props.comment.length}</div>
                     </div>
@@ -28,7 +28,7 @@ const Comment = props => {
                             placeholder="입력하세요"
                             value="입력하세요"
                             onChange={props.handleInputChanage}
-                            maxLength={props.total}
+                            onKeyUp={props.handleMaxlength}
                             disabled={true}
                         ></textarea>
                         <div className={styles.total}>{props.total}</div>
@@ -44,7 +44,7 @@ const Comment = props => {
                             placeholder="입력하세요"
                             value="읽기전용"
                             onChange={props.handleInputChanage}
-                            maxLength={props.total}
+                            onKeyUp={props.handleMaxlength}
                             readOnly={true}
                         ></textarea>
                         <div className={styles.total}>{props.total}</div>

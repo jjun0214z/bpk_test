@@ -13,14 +13,17 @@ class Container extends Component {
                 <Comment 
                     {...this.state}
                     handleInputChanage = {this._handleInputChanage}
+                    handleMaxlength = {this._handleMaxlength}
                     textState={"default"}
                 />
                 <Comment 
                     {...this.state}
+                    handleInputChanage = {this._handleInputChanage}
                     textState={"disabled"}
                 />
                 <Comment 
                     {...this.state}
+                    handleInputChanage = {this._handleInputChanage}
                     textState={"readOnly"}
                 />
             </div>
@@ -29,10 +32,18 @@ class Container extends Component {
 
     _handleInputChanage = event => {
         const { target: { value } } = event;
-
         this.setState({
             comment: value
         });
+    }
+    _handleMaxlength = event => {
+        const { target: { value } } = event;
+        const { total } = this.state;
+        if( total < value.length ){
+            this.setState({
+                comment: value.slice(0, total)
+            });
+        }
     }
 }
 
