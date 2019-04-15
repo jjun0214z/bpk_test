@@ -42,6 +42,7 @@ class Container extends Component {
     _handleMaxlength = event => {
         const { target: { value } } = event;
         const { total } = this.state;
+
         if( total < value.length ){
             this.setState({
                 comment: value.slice(0, total)
