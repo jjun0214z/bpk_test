@@ -1,5 +1,5 @@
 {
-  "main.css": "/bpk_test/static/css/main.57149a88.chunk.css",
+  "main.css": "/bpk_test/static/css/main.a5df21c8.chunk.css",
   "main.js": "/bpk_test/static/js/main.0b001785.chunk.js",
   "main.js.map": "/bpk_test/static/js/main.0b001785.chunk.js.map",
   "runtime~main.js": "/bpk_test/static/js/runtime~main.3d856072.js",
@@ -7,8 +7,8 @@
   "static/js/2.42f3dce2.chunk.js": "/bpk_test/static/js/2.42f3dce2.chunk.js",
   "static/js/2.42f3dce2.chunk.js.map": "/bpk_test/static/js/2.42f3dce2.chunk.js.map",
   "index.html": "/bpk_test/index.html",
-  "precache-manifest.167c173bb64fdff0f9b79161d5f1089a.js": "/bpk_test/precache-manifest.167c173bb64fdff0f9b79161d5f1089a.js",
+  "precache-manifest.507816f9d339574a903bdca926db01d0.js": "/bpk_test/precache-manifest.507816f9d339574a903bdca926db01d0.js",
   "service-worker.js": "/bpk_test/service-worker.js",
-  "static/css/main.57149a88.chunk.css.map": "/bpk_test/static/css/main.57149a88.chunk.css.map",
+  "static/css/main.a5df21c8.chunk.css.map": "/bpk_test/static/css/main.a5df21c8.chunk.css.map",
   "static/media/img_card.png": "/bpk_test/static/media/img_card.3c75031a.png"
 }
